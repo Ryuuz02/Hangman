@@ -1,6 +1,8 @@
+# Import Statements
 from random import randint
 
 
+# Randomly chooses word length based on weighted frequencies
 def choose_word():
     random_num = randint(1, 232400)
     if random_num < 50:
@@ -47,10 +49,14 @@ def choose_word():
         return 21
 
 
+# Chooses a random word length
 word_length = choose_word()
+# Makes an underscore version of the word to display
 underscore_word = []
 for i in range(0, word_length):
     underscore_word.append("_")
+
+# Prints out an ASCII art for the gallows and the game
 print("_________")
 print("| /       |")
 print("|/")
